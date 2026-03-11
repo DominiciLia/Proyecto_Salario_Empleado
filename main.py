@@ -25,7 +25,7 @@ def calcularSueldoBruto(sueldo) :
 
  sueldoMenosIsr = sueldo * isr /100
 
- print (f"El Isr al 15% toma de su sueldo: {sueldoMenosIsr}")
+ print (f"--- El Isr al 15% toma de su sueldo: {sueldoMenosIsr}--- ")
 
  ##Condicional para saber si aplica o no al bono y doble sueldo
 
@@ -37,7 +37,9 @@ def calcularSueldoBruto(sueldo) :
     dobleSueldo = sueldo *2
     print(f"--- Su bono es de: {bono}---")
     print(f"--- Su doble sueldo es de: {dobleSueldo}---")
-
+      
+    sumaGananciasEmpleado = sueldo + bono + dobleSueldo
+     
     if sumaGananciasEmpleado >= 416220 :
        SueldoBruto = sueldo -sueldodescuentado - sueldoMenosIsr - (impuestoISR/100)
 
